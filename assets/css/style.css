@@ -194,7 +194,7 @@ h6 {
 }*/
 p {
     line-height: 2rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 p:last-child {
     margin-bottom: 0px;
@@ -710,7 +710,7 @@ input::-ms-input-placeholder {
     max-width: 60%;
     margin: 0 auto;
     padding-bottom: 30px;
-    font-size:1.125rem;
+    font-size:1.5rem;
 
 }
 
@@ -827,7 +827,7 @@ input::-ms-input-placeholder {
 }
 .main_service .single_service_img {
     position: relative;
-    height: 676px;
+    height: 892px;
 }
 .main_service .single_service_img img {
     width: 100%;
