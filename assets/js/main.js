@@ -159,3 +159,31 @@ $(document).on("scroll", function () {
 
 
 
+function sendMessage(){
+    var cname = $("#cname").val();
+    var cemail = $("#cemail").val();
+    var csubject = $("#csubject").val();
+    var cmessage = $("#cmessage").val();
+
+    var payload = {
+        name: cname,
+        email: cemail,
+        subject: csubject,
+        message: cmessage    
+    }
+
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: 'https://mindtwig.com/sendMail.php',
+        data: JSON.stringify(payload),
+        dataType: "json",
+        headers: {
+            "Content-Type"  : "application/json"
+        },
+        success: function(){
+            alert("Message sent");
+        }
+    });
+
+}
